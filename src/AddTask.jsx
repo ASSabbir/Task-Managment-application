@@ -35,7 +35,7 @@ const AddTask = () => {
 
         try {
             setLoading(true);
-            const response = await fetch("http://localhost:5000/api/tasks", {
+            const response = await fetch("https://task-server-ruddy.vercel.app/api/tasks", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

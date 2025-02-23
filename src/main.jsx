@@ -22,6 +22,7 @@ import {
 } from '@tanstack/react-query'
 import Login from './Components/Log/Login';
 import Register from './Components/Log/Register';
+import UserPrivate from './Components/Log/UserPrivate';
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/",
-    element: <Root></Root>,
+    element:<UserPrivate> <Root></Root></UserPrivate>,
     children: [
       {
         path: "/",

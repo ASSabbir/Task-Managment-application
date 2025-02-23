@@ -7,7 +7,7 @@ const AllTask = () => {
     const { data: tasks = [], isLoading, refetch } = useQuery({
         queryKey: ['alltask'],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/api/tasks`);
+            const res = await axios.get(`https://task-server-ruddy.vercel.app/api/tasks`);
             return res.data;
         }
     })

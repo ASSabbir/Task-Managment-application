@@ -65,11 +65,11 @@ const Login = () => {
                         <form onSubmit={handelSubmit} className="space-y-6">
                             <div className="space-y-1 text-sm">
                                 <label className="block ">Email</label>
-                                <input type="text" name="email" placeholder="email" className="w-full px-4 py-3 rounded-md border-gray-300 border-2 bg-gray-50  " />
+                                <input type="text" name="email" placeholder="email" className="w-full px-4 py-3 rounded-md  border-2 bg-gray-200 text-black  " />
                             </div>
                             <div className="space-y-1 text-sm">
                                 <label className="block ">Password</label>
-                                <input type="password" name="password" placeholder="Password" className="w-full border-2 px-4 py-3 rounded-md border-gray-300 bg-gray-50  " />
+                                <input type="password" name="password" placeholder="Password" className="w-full border-2 px-4 py-3 rounded-md  text-black bg-gray-200  " />
 
                             </div>
                             <button  className="block w-full p-3 text-center hover:bg-color1 rounded-sm text-gray-50 bg-color4 duration-200">

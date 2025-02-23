@@ -16,7 +16,7 @@ const Card = ({ task, refetch }) => {
     const handleComplete = async (id) => {
         try {
             setLoading(true);
-            await axios.patch(`http://localhost:5000/api/tasks/${id}`, { status: "complete" });
+            await axios.patch(`https://task-server-ruddy.vercel.app/api/tasks/${id}`, { status: "complete" });
             refetch();
         } catch (error) {
             console.error("Error:", error);
@@ -37,7 +37,7 @@ const Card = ({ task, refetch }) => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    await axios.delete(`http://localhost:5000/api/tasks/${id}`);
+                    await axios.delete(`https://task-server-ruddy.vercel.app/api/tasks/${id}`);
                     refetch();
                     Swal.fire("Deleted!", "Your task has been deleted.", "success");
                 } catch (error) {
@@ -50,7 +50,7 @@ const Card = ({ task, refetch }) => {
 
     const handleUpdate = async () => {
         try {
-            await axios.patch(`http://localhost:5000/api/tasks/update/${task._id}`, updatedTask);
+            await axios.patch(`https://task-server-ruddy.vercel.app/api/tasks/update/${task._id}`, updatedTask);
             Swal.fire("Updated!", "Your task has been updated.", "success");
             setModalIsOpen(false);
             refetch();

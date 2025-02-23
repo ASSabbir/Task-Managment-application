@@ -7,7 +7,7 @@ const NotComplate = () => {
     const { data: tasks = [], isLoading, refetch } = useQuery({
         queryKey: ['incompleteTasks'],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/api/tasks/incomplete`);
+            const res = await axios.get(`https://task-server-ruddy.vercel.app/api/tasks/incomplete`);
             return res.data
         }
     });
