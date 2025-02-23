@@ -20,7 +20,7 @@ A simple **Task Management App** built with **React, Express, MongoDB, and Tailw
 ## Installation & Setup
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/task-management-app.git
+   git clone https://github.com/ASSabbir/Task-Managment-application.git
    cd task-management-app
    ```
 
